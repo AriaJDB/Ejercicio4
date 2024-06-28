@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form {
+    margin-top: 20px;
+    width: 340px;
+    box-shadow: 0 0 20px rgb(88, 156, 192);
+    padding: 30px;
+    border-radius: 7px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: 'century gothic';
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro {
+    margin-top: 90px;
+}
+
+label {
+    margin-top: 10px;
+}
+
+
+input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 7px;
+    background-color: aliceblue;
+    border: 0px;
+    border-radius: 5px;
+    outline-color: rgb(42, 122, 122);
+    width: 80%;
+}
+
+input .correo{
+    margin-bottom: 0px;
+}
+
+.error {
+    background-color: rgb(212, 24, 127);
+    border: 2px solid rgb(134, 4, 240);
+}
+
+button {
+    margin-top: 20px;
+    padding: 7px;
+    background-color: rgb(187, 231, 255);
+    color: rgb(46, 44, 44);
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 92%;
+}
+
+button:hover {
+    background-color: rgb(49, 117, 145)
+}
+
+.error{
+    background-color: rgb(255, 187, 187);
+    border: 1px solid chocolate;
+}
+.circleCrossNombre, .circleCrossCelular, .circleCrossCorreo,.circleCrossNombreP, .circleCrossPrecio, .circleCrossCategoria, .circleCrossStock{
+    margin-left: 5px;
+    color: red; 
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+.mensajeNombre, .mensajeCelular, .mensajeCorreo, .mensajeNombreP, .mensajePrecio, .mensajeCategoria, .mensajeStock{
+    color: red;
+    font-size: small;
+}
+
+.circleCheckNombre, .circleCheckCelular, .circleCheckCorreo,.circleCheckNombreP, .circleCheckPrecio, .circleCheckCategoria, .circleCheckStock{
+    color: rgb(88, 190, 14)
+}
+
+.correcto{
+    background-color: yellowgreen;
+    border: 1px solid green;
+}
+
+textarea{
+    margin-bottom: 25px;
+    width: 400px;
+}

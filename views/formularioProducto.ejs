@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro producto</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/formularioProducto.js" defer></script>
+</head>
+<body>
+        <h1>Registro de producto</h1>
+    <div class="contenedor">
+        <form action="/agregarProducto" method="post" id="formularioProducto">
+            <label for="nombreP">Nombre: </label><span class="ocultar mensajeNombreP">Nombre no válido</span>     
+            <input autofocus name="nombreP" id="nombreP" type="text" placeholder="Nombre">
+            <i class="ocultar circleCrossNombreP fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckNombreP fa-regular fa-circle-check"></i>
+
+            <label for="precio">Precio: </label><span class="ocultar mensajePrecio">Precio no válido</span>
+            <input name="precio" id="precio" type="text" placeholder="Precio">
+            <i class="ocultar circleCrossPrecio fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckPrecio fa-regular fa-circle-check"></i>
+
+            <label for="categoria">Categoria: </label><span class="ocultar mensajeCategoria">Categoria no valida</span>
+            <input name="categoria" id="categoria" type="text" placeholder="Categoria">
+            <i class="ocultar circleCrossCategoria fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckCategoria fa-regular fa-circle-check"></i>
+
+            <label for="stock">Stock: </label><span class="ocultar mensajeStock">Stock no válido</span>
+            <input name="stock" id="stock" type="text" placeholder="Stock">
+            <i class="ocultar circleCrossStock fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckStock fa-regular fa-circle-check"></i>
+
+            <button type="submit" id="button">Guardar datos</button>
+        </form>
+    </div>
+</body>
+</html>

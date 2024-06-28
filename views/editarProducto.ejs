@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Producto</title>
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/formulario.js" defer></script>
+</head>
+<body>
+    <h1>Editar Producto</h1>
+    <div class="contenedor">
+        <form action="/editarProducto" method="post" id="formulario">
+            <input type="hidden" name="id_prod" id="id_prod" value="<%= id_prod %>">
+
+            <label for="nombreP">Nombre: </label>
+            <input name="nombreP" id="nombreP" type="text" value="<%= nombreP %>" placeholder="Nombre">
+
+            <label for="precio">Precio: </label>
+            <input name="precio" id="precio" type="text" value="<%= precio %>" placeholder="Precio">
+
+            <label for="categoria">Categoría: </label>
+            <input name="categoria" id="categoria" type="text" value="<%= categoria %>" placeholder="Categoría">
+
+            <label for="stock">Stock: </label>
+            <input name="stock" id="stock" type="text" value="<%= stock %>" placeholder="Stock">
+
+            <button type="submit">Actualizar Producto</button>
+        </form>
+    </div>
+</body>
+</html>

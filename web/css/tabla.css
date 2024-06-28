@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+    font-family: 'century gothic';
+}
+
+table {
+    border-collapse: collapse;
+    border: 3px solid cornflowerblue;
+    width: 100%;
+}
+
+th{
+    padding: 10px;
+    background-color: rgb(87, 173, 210);
+    color:white;
+}
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid cadetblue;
+}
+tr:nth-child(odd){
+    background-color: cadetblue;
+}
+.contenedor{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 30px rgb(205, 205, 205);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 5px 10px 5px;
+    width: 80%;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+.contenedor:hover{
+    box-shadow: 0 10px 30px rgb(186, 186, 186);
+    border-radius: 10px;
+    transition: ease;
+    transition-duration: 0.5s;
+}
+.descripcion{
+    width: 40%;
+}
+.tarjeta{
+    background-color: white;
+}
+
+button , #id_usuario {
+    margin-top: 20px;
+    padding: 7px;
+    background-color: rgb(187, 231, 255);
+    color: rgb(46, 44, 44);
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 45%;
+    justify-items: center;
+}   
+
+button #editar_usuario{
+    background-color: aqua;
+}
+
+button:hover{
+    background-color: rgb(49, 117, 145)
+}
