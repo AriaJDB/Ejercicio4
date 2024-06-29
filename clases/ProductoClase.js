@@ -13,26 +13,30 @@ class Producto {
     }
 
     set nombreP(nombreP) {
-        if (nombreP.length > 0) {
-            this._nombreP = nombreP;
+        var regexNombreP = /^[A-Za-zÁÉÍÓÚáéíóúÑñ'][A-Za-záéíóúñ']*([ ][A-Za-zÁÉÍÓÚáéíóúÑñ'][A-Za-záéíóúñ']*)*$/;
+        if (regexNombreP.test(nombreP)){
+            this._nombreP=nombreP;
         }
     }
 
     set precio(precio) {
-        if (!isNaN(precio) && precio > 0) {
-            this._precio = precio;
+        var regexPrecio = /^\d+(\.\d{1,2})?$/;
+        if (regexPrecio.test(precio)){
+            this._precio=precio;
         }
     }
 
     set categoria(categoria) {
-        if (categoria.length > 0) {
-            this._categoria = categoria;
+        var regexCategoria = /^[A-Za-zÁÉÍÓÚáéíóúÑñ'][A-Za-záéíóúñ']*([ ][A-Za-zÁÉÍÓÚáéíóúÑñ'][A-Za-záéíóúñ']*)*$/;
+        if (regexCategoria.test(categoria)){
+            this._categoria=categoria;
         }
     }
 
     set stock(stock) {
-        if (!isNaN(stock) && stock >= 0) {
-            this._stock = stock;
+        var regexStock = /^\d+$/;
+        if (regexStock.test(stock)){
+            this._stock=stock;
         }
     }
 

@@ -6,7 +6,7 @@ class ProductoBD extends ConectarBD {
     }
 
     async nuevoProducto(datosProducto) {
-        const sql = `INSERT INTO producto VALUES (null, '${datosProducto.nombreP}', '${datosProducto.precio}', '${datosProducto.categoria}', '${datosProducto.stock}');`;
+        const sql = "insert into producto values (null, '"+datosProducto.nombreP+"','"+datosProducto.precio+"', '"+datosProducto.categoria+"', '"+datosProducto.stock+"');";
         try {
             await this.conectarMySql();
             await this.conexion.execute(sql);
@@ -19,7 +19,7 @@ class ProductoBD extends ConectarBD {
     }
 
     async mostrarProductos() {
-        const sql = "SELECT * FROM producto;";
+        const sql = "select * from producto;";
         try {
             await this.conectarMySql();
             const [productosMySql] = await this.conexion.execute(sql);
@@ -33,7 +33,7 @@ class ProductoBD extends ConectarBD {
     }
 
     async productoID(id_prod) {
-        const sql = `SELECT * FROM producto WHERE id_prod = ${id_prod};`;
+        const sql = "select * from producto where id_prod = "+id_prod+";"
         try {
             await this.conectarMySql();
             const [[producto]] = await this.conexion.execute(sql);
@@ -46,7 +46,7 @@ class ProductoBD extends ConectarBD {
     }
 
     async editarProducto(producto) {
-        const sql = `UPDATE producto SET nombreP = '${producto.nombreP}', precio = '${producto.precio}', categoria = '${producto.categoria}', stock = '${producto.stock}' WHERE id_prod = ${producto.id_prod};`;
+        const sql = "update producto set nombreP = '"+producto.nombreP+"', precio = '"+producto.precio+"', categoria = '"+producto.categoria+"', stock = '"+producto.stock+"' where id_prod = '"+producto.id_prod;+"';";
         try {
             await this.conectarMySql();
             await this.conexion.execute(sql);
@@ -59,7 +59,7 @@ class ProductoBD extends ConectarBD {
     }
 
     async borrarProducto(id_prod) {
-        const sql = `DELETE FROM producto WHERE id_prod = ${id_prod};`;
+        const sql = "delete from producto where id_prod = "+id_prod+";"
         try {
             await this.conectarMySql();
             await this.conexion.execute(sql);

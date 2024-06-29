@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editar Producto</title>
     <link rel="stylesheet" href="/css/formulario.css">
-    <script src="/js/formulario.js" defer></script>
+    <script src="/js/formularioProducto.js" defer></script>
 </head>
 <body>
     <h1>Editar Producto</h1>
@@ -15,15 +15,23 @@
 
             <label for="nombreP">Nombre: </label>
             <input name="nombreP" id="nombreP" type="text" value="<%= nombreP %>" placeholder="Nombre">
+            <i class="ocultar circleCrossNombreP fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckNombreP fa-regular fa-circle-check"></i>
 
             <label for="precio">Precio: </label>
             <input name="precio" id="precio" type="text" value="<%= precio %>" placeholder="Precio">
+            <i class="ocultar circleCrossPrecio fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckPrecio fa-regular fa-circle-check"></i>
 
             <label for="categoria">Categoría: </label>
             <input name="categoria" id="categoria" type="text" value="<%= categoria %>" placeholder="Categoría">
+            <i class="ocultar circleCrossCategoria fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckCategoria fa-regular fa-circle-check"></i>
 
             <label for="stock">Stock: </label>
             <input name="stock" id="stock" type="text" value="<%= stock %>" placeholder="Stock">
+            <i class="ocultar circleCrossStock fa-regular fa-circle-xmark"></i>
+            <i class="ocultar circleCheckStock fa-regular fa-circle-check"></i>
 
             <button type="submit">Actualizar Producto</button>
         </form>
